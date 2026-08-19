@@ -196,7 +196,7 @@ def mainPage():
                 else:
                     st.session_state.NTE_Quote = "NTE"
                 if parentDf["Editable"].get(0) is not None and parentDf["Editable"].get(0) != "":
-                    st.session_state.editable = int(parentDf["Editable"])
+                    st.session_state.editable = int(parentDf["Editable"].iloc[0])
                 else:
                     st.session_state.editable = 1
                 if parentDf["Status"].get(0) is not None and (parentDf["Status"].get(0) == "Approved" or parentDf["Status"].get(0) == "Processed"):
