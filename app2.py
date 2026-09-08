@@ -736,7 +736,7 @@ def mainPage():
                                                         "Description",
                                                         help="Description",
                                                         width=inwidth/4,
-                                                        options=filtered_descriptions['bindDes'],
+                                                        options=filtered_descriptions['bindDes'].tolist(),
                                                     ),
                                                     "Incurred/Proposed": st.column_config.SelectboxColumn(
                                                         "Incurred/Proposed",
